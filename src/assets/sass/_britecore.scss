@@ -16,9 +16,7 @@ ul{
   list-style-type: none;
   padding-left:1rem;
 }
-.edit{
-  font-size:.8rem;
-}
+
 i.fa.lighten {
     float: left;
     margin-right: 1rem;
@@ -96,4 +94,7 @@ div.alert.alert-warning.alert-dismissible {
   .wrapper.row{
     padding:.75rem;
   }
+}
+a.edit{
+  font-size:.8rem;
 }

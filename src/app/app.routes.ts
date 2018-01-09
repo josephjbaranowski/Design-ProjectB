@@ -36,12 +36,26 @@ import { TablesComponent } from './dashboard/tables/tables.component';
 import { FormsComponent } from './dashboard/forms/forms.component';
 import { DatatablesComponent } from './dashboard/tables/datatables/datatables.component';
 import { RegtablesComponent } from './dashboard/tables/regtables/regtables.component';
+import { AGdashboardComponent } from './agdashboard/agdashboard.component';
+import { NavigationComponent } from './agdashboard/navigation/navigation.component';
+import { SidenavigationComponent } from './agdashboard/sidenavigation/sidenavigation.component';
+import { AgfooterComponent } from './agdashboard/agfooter/agfooter.component';
+import { InitialComponent } from './agdashboard/initial/initial.component';
 
 export const routes: Routes = [
 {
 	 path: '',
 	 component: LoginComponent
  },
+ { path: 'agdashboard', component: AGdashboardComponent,
+ children:[
+	 { path: 'inital', component: InitialComponent,
+	children:[
+
+]
+	},
+]
+},
 	 { path: 'dashboard', component: DashboardComponent,
 	 children:[
 	 { path: 'dashboard1', component: Dashboard1Component },

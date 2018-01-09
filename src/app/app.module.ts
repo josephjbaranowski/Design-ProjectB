@@ -47,6 +47,11 @@ import { Policy1Component } from './dashboard/policy1/policy1.component';
 import { Policy2Component } from './dashboard/policy2/policy2.component';
 import { Policy3Component } from './dashboard/policy3/policy3.component';
 import { Policy4Component } from './dashboard/policy4/policy4.component';
+import { AGdashboardComponent } from './agdashboard/agdashboard.component';
+import { NavigationComponent } from './agdashboard/navigation/navigation.component';
+import { SidenavigationComponent } from './agdashboard/sidenavigation/sidenavigation.component';
+import { AgfooterComponent } from './agdashboard/agfooter/agfooter.component';
+import { InitialComponent } from './agdashboard/initial/initial.component';
 
 
 @NgModule({
@@ -91,6 +96,11 @@ import { Policy4Component } from './dashboard/policy4/policy4.component';
     Policy2Component,
     Policy3Component,
     Policy4Component,
+    AGdashboardComponent,
+    NavigationComponent,
+    SidenavigationComponent,
+    AgfooterComponent,
+    InitialComponent,
 
   ],
   imports: [
