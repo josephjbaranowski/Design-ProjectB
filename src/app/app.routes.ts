@@ -41,6 +41,8 @@ import { NavigationComponent } from './agdashboard/navigation/navigation.compone
 import { SidenavigationComponent } from './agdashboard/sidenavigation/sidenavigation.component';
 import { AgfooterComponent } from './agdashboard/agfooter/agfooter.component';
 import { InitialComponent } from './agdashboard/initial/initial.component';
+import { AgencyeditComponent } from './agdashboard/agencyedit/agencyedit.component';
+
 
 export const routes: Routes = [
 {
@@ -49,12 +51,9 @@ export const routes: Routes = [
  },
  { path: 'agdashboard', component: AGdashboardComponent,
  children:[
-	 { path: 'inital', component: InitialComponent,
-	children:[
-
-]
-	},
-]
+	 { path: 'inital', component: InitialComponent},
+		{ path: 'agencyedit', component: AgencyeditComponent },
+  ]
 },
 	 { path: 'dashboard', component: DashboardComponent,
 	 children:[
@@ -80,23 +79,6 @@ export const routes: Routes = [
 		{ path: 'layout', component: LayoutComponent },
 		{ path: 'grid', component: GridComponent },
 		{ path: 'forms', component: FormsComponent },
-		{ path: 'tables', component: TablesComponent,
-		children:[
-			{ path: 'datatables', component: DatatablesComponent },
-			{ path: 'regtables', component: RegtablesComponent }
-			]
-		 },
-		 { path: 'uielements', component: UielementsComponent,
- 		children:[
-			{ path: 'accordion', component: AccordionComponent },
-			{ path: 'buttons', component: ButtonsComponent },
-			{ path: 'carousel', component: CarouselComponent },
-			{ path: 'alert', component: AlertComponent },
-			{ path: 'collapse', component: CollapseComponent },
-			{ path: 'progressbar', component: ProgressbarComponent },
-
- 			]
- 		 },
 	 ]
 	 },
 	 { path: 'login', component: LoginComponent },

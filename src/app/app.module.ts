@@ -52,6 +52,7 @@ import { NavigationComponent } from './agdashboard/navigation/navigation.compone
 import { SidenavigationComponent } from './agdashboard/sidenavigation/sidenavigation.component';
 import { AgfooterComponent } from './agdashboard/agfooter/agfooter.component';
 import { InitialComponent } from './agdashboard/initial/initial.component';
+import { AgencyeditComponent } from './agdashboard/agencyedit/agencyedit.component';
 
 
 @NgModule({
@@ -101,7 +102,7 @@ import { InitialComponent } from './agdashboard/initial/initial.component';
     SidenavigationComponent,
     AgfooterComponent,
     InitialComponent,
-
+    AgencyeditComponent,
   ],
   imports: [
     BrowserModule,
