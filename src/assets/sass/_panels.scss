@@ -1,0 +1,31 @@
+.panel {
+  border: 0.1rem solid #eee;
+  box-shadow: $b-shadow-1;
+  padding: 1rem;
+
+  .panel-heading {
+    height: 2.5rem;
+    width: 100%;
+    display:flex;
+    align-items: stretch;
+
+    .panel-title {
+      font-size: 1rem;
+      margin-bottom:0;
+      flex:2 0 0;
+    }
+
+    .panel-controls {
+      flex: 1 0 0;
+    justify-content: flex-end;
+    display: flex;
+    }
+  }
+  .panel-body{
+
+  }
+  .panel-footer{
+    font-size:.8rem;
+    margin-top:1rem;
+  }
+}

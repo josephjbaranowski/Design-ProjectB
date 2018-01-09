@@ -1,0 +1,45 @@
+html, body{
+  font-size:$font-size-base;
+}
+body{
+  background:$body-bg;
+}
+
+
+.secondary-action-link{
+  font-size:.8rem;
+  margin-top:1.5rem;
+}
+.user-avatar {
+    border: .1em solid #FFF;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width:1.75em;
+}
+
+
+
+/* End */
+
+.display-sm{
+    display:none;
+}
+.hide-sm{
+    display:block;
+}
+
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}

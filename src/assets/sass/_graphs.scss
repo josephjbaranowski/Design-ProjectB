@@ -1,0 +1,40 @@
+.graph-container{
+  display:block;
+}
+.donut-container{
+  display:block;
+  iframe{
+
+  }
+.middle-donut {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 75%;
+  margin: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  h3{
+    margin-bottom:0;
+  }
+    .subheader{
+      letter-spacing:0;
+    }
+}
+@media screen and (min-width: $sidebar-breakpoint) and (max-width: 1200px) {
+  .emphasis{
+    font-size:2.5rem;
+  }
+  .middle-donut{
+    bottom:2rem;
+  }
+}
+}

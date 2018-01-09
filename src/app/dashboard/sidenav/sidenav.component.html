@@ -1,0 +1,103 @@
+
+<button class="btn sidebar-button" id="toggle-sidebar" type="button" (click)="isSidebarOpen = !isSidebarOpen;" [class.sidebarPushRight]="isSidebarOpen">
+    &#9776;
+</button>
+<nav class="sidebar" [class.sidebarPushRight]="isSidebarOpen">
+  <div class="app-title">
+
+    <h2>DesignProject-B</h2>
+    <p class="subtitle">Britecore</p>
+  </div>
+  <ul class="list-group">
+    <ngb-accordion [closeOthers]="true">
+      <ngb-panel id="1">
+        <template ngbPanelTitle>
+          <a routerLink="/dashboard/dashboard1" [routerLinkActive]="['router-link-active']" class="list-group-item">Agencies
+            </a>
+      </template>
+        <template ngbPanelContent>
+      </template>
+      </ngb-panel>
+    <!--  <ngb-panel id="2">
+        <template ngbPanelTitle>
+          <a routerLink="/dashboard/forms" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                  Forms
+              </a>
+        </template>
+        <template ngbPanelContent>
+        </template>
+      </ngb-panel>-->
+      <ngb-panel id="3">
+        <template ngbPanelTitle>
+          <a routerLink="/dashboard/license" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                  Licenses
+              </a>
+        </template>
+        <template ngbPanelContent>
+        </template>
+      </ngb-panel>
+
+      <!--<ngb-panel id="4">
+        <template ngbPanelTitle>
+          <a class="list-group-item">UI Elements
+          <i class="arrow-right fa fa-chevron-right"></i></a>
+      </template>
+        <template ngbPanelContent>
+        <ul class="animated fadeInLeft">
+
+
+          <li class=""><a routerLink="/dashboard/uielements/buttons" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                    Buttons & Typography
+            </a></li>
+          <li class=""><a routerLink="/dashboard/uielements/carousel" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            Carousel
+          </a></li>
+          <li class=""><a routerLink="/dashboard/uielements/collapse" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            Panels
+            </a></li>
+          <li class=""><a routerLink="/dashboard/uielements/progressbar" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                Progress & Labels
+                </a></li>
+          <li class=""><a routerLink="/dashboard/uielements/alert" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            Notifications
+                        </a></li>
+          <li class=""><a routerLink="/dashboard/uielements/accordion" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            Tabs &  Accordions
+                            </a></li>
+        </ul>
+      </template>
+      </ngb-panel>
+      <ngb-panel id="5">
+        <template ngbPanelTitle>
+          <a class="list-group-item">
+                  Layouts & Options <i class="arrow-right fa fa-chevron-right"></i>
+              </a>
+        </template>
+        <template ngbPanelContent>
+          <ul class="animated fadeInLeft">
+
+
+            <li class=""><a routerLink="/dashboard/grid" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                    Grid
+                </a></li>
+            <li class=""><a routerLink="/dashboard/layout" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                    Layouts & Options
+                </a></li>
+
+          </ul>
+        </template>
+      </ngb-panel>
+      <ngb-panel id="6">
+        <template ngbPanelTitle>
+          <a routerLink="/dashboard/tables/regtables" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                Tables
+              </a>
+        </template>
+        <template ngbPanelContent>
+        </template>
+      </ngb-panel>-->
+    </ngb-accordion>
+
+
+  </ul>
+</nav>

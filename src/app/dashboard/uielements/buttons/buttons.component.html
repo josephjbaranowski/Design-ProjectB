@@ -1,0 +1,128 @@
+<section class="dashboard-header  ">
+  <div class="wrapper row">
+  <div class="col">
+    <h1>Buttons & Typography</h1>
+    <p class="subheader">Buttons are meant to stand out, help your users see them!</p>
+  </div>
+</div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Default</h2>
+      <p>By default all buttons will be the <code>$brand-cta</code> variable color chosen in the _custvariables.scss file. Secondary button color by default is <code>$brandy-primary</code> variable. Links can be turned to buttons by the <code>btn</code> class and buttons can be changed to links by the <code>link</code> class.</p>
+    </header>
+    <button>Default Button</button>
+    <button class="secondary">.secondary</button>
+    <button class="link">.link</button>
+    <button disabled>disabled</button>
+  </div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Size and width</h2>
+      <p>One size does not fill all scenarios, which is why you can change sizes <code>btn-sm</code>, <code>btn-lg</code>, <code>btn-xl</code>.</p>
+    </header>
+    <button class="btn-sm">.btn-sm</button>
+    <button>Default</button>
+    <button class="btn-lg">.btn-lg</button>
+    <button class="btn-xl">.btn-xl</button>
+
+
+  </div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <p>But what if you want a super large and <code>full-width</code> button?</p>
+    <button class="full-width" >.full-width</button>
+  </div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Icons & Buttons</h2>
+      <p>Sometimes you really need to combine words and pictures this is how it is done.</p>
+    </header>
+    <button><i class="fa fa-heart"></i>heart us everywhere</button>
+    <button class="secondary"><i class="fa fa-facebook"></i>Like us on Facebook</button>
+    <button><i class="fa fa-envelope"></i></button>
+    <button><i class="fa fa-beer"></i></button>
+  </div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Button Dropdowns</h2>
+      <p>Sometimes more than one action is needed</p>
+    </header>
+    <div ngbDropdown class="d-inline-block">
+     <button class="btn btn-outline-primary" id="dropdownMenu1" ngbDropdownToggle>Toggle dropdown</button>
+     <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+       <button class="dropdown-item">Action - 1</button>
+       <button class="dropdown-item">Another Action</button>
+       <button class="dropdown-item">Something else is here</button>
+     </div>
+   </div>
+
+
+  </div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Radio and Checkbox</h2>
+      <p>Want to spruce up those boring old checkboxes and radio buttons?</p>
+    </header>
+    <div [(ngModel)]="model" ngbRadioGroup name="radioBasic">
+  <label class="btn btn-primary">
+    <input type="radio" [value]="1"> Left (pre-checked)
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" value="middle"> Middle
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" [value]="false"> Right
+  </label>
+  </div>
+  <br />
+  <div class="btn-group button-spacing" data-toggle="buttons">
+  <label class="btn btn-primary" [class.active]="model1.left">
+    <input type="checkbox" [(ngModel)]="model1.left"> Left (pre-checked)
+  </label>
+  <label class="btn btn-primary" [class.active]="model1.middle">
+    <input type="checkbox" [(ngModel)]="model1.middle"> Middle
+  </label>
+  <label class="btn btn-primary" [class.active]="model1.right">
+    <input type="checkbox" [(ngModel)]="model1.right"> Right
+  </label>
+</div>
+
+
+
+  </div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Pagination</h2>
+      <p>The color defaults to the link color on the site since it is not the primary action.</p>
+    </header>
+    <ngb-pagination [collectionSize]="50" [(page)]="currentPage" ></ngb-pagination>
+
+
+  </div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Typography</h2>
+      <p>Make some sub-headers by adding a span with class = <code>subheader</code> inside of the Heading</p>
+    </header>
+    <h1>Heading 1<span class="subheader">Sub-heading</span></h1>
+    <h2>Heading 2<span class="subheader">Sub-heading</span></h2>
+    <h3>Heading 3<span class="subheader">Sub-heading</span></h3>
+
+
+  </div>
+</section>

@@ -1,0 +1,46 @@
+label{
+  margin-bottom:0;
+  font-size:.8rem;
+}
+.form-control:focus{
+  border-color:$brand-primary;
+  background:lighten($brand-primary, 56%);
+}
+form button, form .btn{
+  width:100%;
+      margin-left:0;
+}
+form{
+  padding:.5rem;
+  max-width:$form-max-width;
+}
+.has-danger .form-control{
+  border-color:$brand-danger;
+}
+.has-danger .form-control:focus{
+  border-color:$brand-danger;
+  background:lighten($brand-danger, 40%);
+}
+.has-danger .col-form-label, .has-danger .custom-control, .has-danger .form-check-label, .has-danger .form-control-feedback, .has-danger .form-control-label{
+  color:$brand-danger;
+}
+.has-warning .form-control {
+    border-color: $brand-warning;
+}
+ .has-warning .form-control:focus{
+  border-color:$brand-warning;
+  background:lighten($brand-warning, 40%);
+}
+.has-warning .col-form-label, .has-warning .custom-control, .has-warning .form-check-label, .has-warning .form-control-feedback, .has-warning .form-control-label{
+  color:$brand-warning;
+}
+.has-success .form-control {
+    border-color: $brand-success;
+}
+ .has-success .form-control:focus{
+  border-color:$brand-success;
+  background:lighten($brand-success, 40%);
+}
+.has-success .col-form-label, .has-success .custom-control, .has-success .form-check-label, .has-success .form-control-feedback, .has-success .form-control-label{
+  color:$brand-success;
+}

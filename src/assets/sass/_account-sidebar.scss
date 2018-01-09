@@ -1,0 +1,50 @@
+
+.account-sidebar{
+  transform: translateX(100%);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    position: fixed;
+    border-left:.1em solid #eee;
+      border-top:.1em solid #eee;
+    top:0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    height:100vh;
+    background:$body-bg;
+      margin-top:$top-nav-height;
+    ul{
+      list-style-type: none;
+      padding-left:0;
+      text-align:center;
+      li{
+        .dropdown-item{
+          padding:1em auto;
+          i{
+            opacity:.25;
+          }
+        }
+      }
+      li.user-profile {
+          margin-bottom: 2rem;
+          padding:2rem;
+          border-bottom: .1em solid #eee;
+          background: #fff;
+          .email{
+            font-size: .8rem;
+            margin-top: -1rem;
+          }
+      }
+    }
+    img{
+      max-width:10rem;
+      border-radius: 50%;
+      margin-bottom:1.5rem;
+      border:.2rem solid $brand-primary;
+    }
+}
+
+.account-sidebar.appear {
+        transform: translateX(0);
+            box-shadow:$b-shadow-2;
+}

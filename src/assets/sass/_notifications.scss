@@ -1,0 +1,67 @@
+.info{
+  i{
+  color:$brand-info;
+}
+}
+.success{
+  i{
+  color:$brand-success;
+}
+}
+.warning{
+  i{
+  color:$brand-warning;
+  }
+}
+.danger{
+  i{
+  color:$brand-danger;
+}
+}
+.info-text, i.info{
+  color:$brand-info;
+}
+.success-text, i.success{
+  color:$brand-success;
+}
+.warning-text, i.warning{
+  color:$brand-warning;
+}
+.danger-text, i.danger{
+  color:$brand-danger;
+}
+
+.alert{
+  border-radius:0;
+  button{
+    box-shadow:0 0 0 0;
+    color:$brand-primary-background-text;
+  }
+  button:hover{
+    transform:none;
+    background:transparent;
+  }
+}
+.alert-dismissible .close{
+  color:$brand-primary-background-text;
+}
+.alert-success{
+  background:$brand-success;
+  color:$brand-primary-background-text;
+}
+.alert-info{
+  background:$brand-info;
+  color:$brand-primary-background-text;
+}
+.alert-warning{
+  background:$brand-warning;
+  color:$brand-primary-background-text;
+}
+.alert-danger{
+  background:$brand-danger;
+  color:$brand-primary-background-text;
+}
+.alert-dismissible .close{
+  top:-1.25rem;
+  padding:0;
+}

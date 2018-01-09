@@ -1,0 +1,70 @@
+.topnavlayout{
+.topnav .top-right-nav li.dropdown.nav-item a.dropdown-toggle {
+    color: #fff;
+}
+@media screen and (min-width: $sidebar-breakpoint){
+  .top-nav-logo{
+    display:block;
+  }
+  .main-container{
+    margin-left:0;
+  }
+  .topnav{
+    margin-left:0;
+    background: $nav-background;
+
+  }
+  nav.sidebar{
+    position:relative;
+    box-shadow:0 0 0 0;
+    width:auto;
+    left:0;
+    top:-.85rem;
+    display:inline-block;
+    margin-left:0;
+    overflow-x: visible;
+    overflow:visible;
+    background-color:transparent;
+    .list-group a.list-group-item{
+      font-size:.7rem;
+    }
+    .arrow-right{
+      padding-left:.5rem;
+      position:relative;
+      right:0;
+      top:0;
+    }
+    .card .card-header, .card .card-header.active{
+      border:0 solid transparent;
+      border-top:.1rem solid $brand-primary;
+    }
+    .app-title{
+      display:none;
+    }
+    .list-group .card{
+      flex-direction:row;
+    }
+    .card-block{
+      position:relative;
+      border-left:0 solid transparent;
+      ul{
+        left:-8rem;
+        width:13rem;
+        top:2.5rem;
+        height:auto;
+        position:absolute;
+        background:#fff;
+        border:.1rem solid #ddd;
+        box-shadow:$b-shadow-1;
+      }
+    }
+  }
+}
+.max-width-center{
+  background:#fff;
+  .wrapper{
+    max-width:$content-max-width;
+    margin:0 auto;
+  }
+}
+}

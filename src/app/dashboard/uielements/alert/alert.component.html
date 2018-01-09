@@ -1,0 +1,22 @@
+<section class="dashboard-header  ">
+  <div class="wrapper row">
+  <div class="col">
+    <h1>Notifications</h1>
+    <p class="subheader">Let your user know if things are on fire.</p>
+  </div>
+</div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>To dismiss or not?</h2>
+      <p>Permanent alerts are pretty nifty, but users hate them.</p>
+    </header>
+    <p *ngFor="let alert of alerts">
+      <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
+    </p>
+    <p>
+      <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+    </p>
+  </div>
+  <section>

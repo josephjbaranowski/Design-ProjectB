@@ -1,0 +1,33 @@
+<section class="dashboard-header  ">
+  <div class="wrapper row">
+  <div class="col">
+    <h1>Panels</h1>
+    <p class="subheader">Style areas of content</p>
+  </div>
+</div>
+</section>
+<section class="row wrapper">
+  <div class="col">
+    <header>
+      <h2>Panel</h2>
+      <p>Display your content in a preconceived way!</p>
+    </header>
+
+    <div class="panel ">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+        <div class="panel-controls"><a class="" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+      <i class="fa fa-chevron-up"></i>
+
+    </a>
+    </div>
+      </div>
+      <div id="collapseExample" [ngbCollapse]="isCollapsed" class="panel-body">
+      <p>Post-ironic asymmetrical swag mixtape everyday carry. Roof party banjo pop-up, microdosing hashtag synth everyday carry mlkshk viral literally vexillologist. Ramps trust fund chambray, mixtape blue bottle 8-bit poke jianbing. Mixtape trust fund quinoa ennui lomo woke. Listicle beard raw denim selfies coloring book. Green juice direct trade aesthetic 90's williamsburg, small batch succulents glossier lyft. Bushwick next level brooklyn whatever crucifix poke.</p>
+
+<p>Kale chips meh marfa offal, twee flannel messenger bag celiac kitsch. Hammock gluten-free intelligentsia, freegan swag copper mug hoodie twee blog hot chicken street art fap meggings. Actually bitters gluten-free green juice, activated charcoal sartorial williamsburg next level you probably haven't heard of them paleo wolf chia. Retro you probably haven't heard of them post-ironic farm-to-table. Cray cold-pressed gastropub, locavore chicharrones fashion axe jean shorts lomo waistcoat gluten-free normcore master cleanse bitters. Venmo mixtape sriracha, raw denim wolf hell of marfa keffiyeh chicharrones cardigan fam salvia chartreuse copper mug. Scenester church-key franzen microdosing PBR&B schlitz.</p>
+      </div>
+      <div class="panel-footer">Panel footer</div>
+    </div>
+</div>
+</section>

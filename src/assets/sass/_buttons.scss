@@ -1,0 +1,111 @@
+
+  a.btn, .btn, button{
+    border:0 solid #fff;
+    border-radius:0;
+    color: #fff;
+    background: $brand-cta;
+    padding: $button-padding;
+    font-family: $header-font;
+    text-decoration: none;
+    letter-spacing:.05rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow:$b-shadow-3;
+    margin:1rem;
+    i{
+      margin:0 .5rem;
+    }
+    img{
+      margin-right:1em;
+    }
+
+  }
+  .button-spacing{
+    margin-top:2em;
+  }
+  .btn:hover, button:hover{
+    background: darken($brand-cta, 10%);
+    text-decoration: none;
+    box-shadow:$b-shadow-2;
+    transform: scale(1.05);
+    color:$brand-primary-background-text;
+  }
+  .secondary.btn, button.secondary{
+    background:$brand-primary;
+  }
+  .secondary.btn:hover, button.secondary:hover{
+    background:darken($brand-primary, 10%);
+  }
+  button.link, .link.btn{
+    background:transparent;
+    box-shadow:0 0 0 0;
+    color:$brand-primary;
+  }
+  button.link:hover, .link.btn:hover{
+    background:transparent;
+    box-shadow:0 0 0 0;
+  }
+a{
+  color:$brand-primary;
+}
+.btn-group-sm>.btn, .btn-sm{
+  font-size:.8rem;
+  padding: .5rem 1rem;
+  border-radius:0;
+}
+.btn-group-lg>.btn, .btn-lg{
+padding: 1.25rem 2.5rem;
+    font-size: 1.25rem;
+    border-radius: 0;
+}
+.btn-group-xl>.btn, .btn-xl{
+padding: 1.5rem 3.5rem;
+    font-size: 1.75rem;
+    border-radius: 0;
+}
+button.full-width, .btn.full-width{
+  width:100%;
+}
+.dropdown-menu{
+   button {
+    box-shadow: 0 0 0 0;
+    font-family:$main-font;
+    padding:.5rem 1.5rem;
+    font-size:.9rem;
+    color:$text-color;
+    letter-spacing:0;
+  }
+  button:hover{
+    transform:none;
+  }
+}
+button:disabled {
+    background: #eee;
+    color: #999;
+    box-shadow: 0 0 0 0;
+    cursor:not-allowed;
+}
+button:disabled:hover {
+  transform:none;
+}
+.btn-group{
+  box-shadow: $b-shadow-3;
+  .btn, button{
+    margin:0;
+    box-shadow:0 0 0 0;
+    background:$brand-primary;
+    border-right:.1rem solid rgba(255, 255, 255, .5);
+  }
+  .btn:last-child{
+    border-right:0 solid transparent;
+  }
+  .btn.active{
+      background:$brand-cta;
+  }
+}
+.page-link{
+  border:0px solid transparent;
+  color:$brand-primary;
+}
+.page-link:hover, .page-link:focus{
+  transform:scale(1.08);
+}

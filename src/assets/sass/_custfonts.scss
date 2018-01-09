@@ -1,0 +1,50 @@
+
+body{
+  font-family:$main-font;
+}
+h1, h2, h3, h4, h5, h6{
+  line-height: 1.3em;
+	margin-bottom:1em;
+
+}
+h1{
+  font-family:$header-font;
+}
+.subtitle{
+  text-align: center;
+  letter-spacing: .25em;
+  text-transform:uppercase;
+  line-height:.9em;
+  span{
+    font-size:.45em;
+    display:block;
+    letter-spacing:.1em;
+    color:lighten($text-color, 10%);
+    text-transform:none;
+  }
+}
+p{
+  max-width:55rem;
+}
+h1, h2, h3, h4, h5, h6{
+  .subheader{
+      display:block;
+      font-size:.6em;
+      line-height:.5rem;
+      font-family:$main-font;
+  }
+}
+.flex{
+  position:relative;
+  display:flex;
+.symbol{
+  font-size:.5em;
+  margin-right:.5rem
+}
+}
+.inline-label{
+  font-size:.8em;
+}
+a, a:not([href]):not([tabindex]){
+  color:$brand-primary;
+}

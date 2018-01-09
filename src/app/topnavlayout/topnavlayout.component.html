@@ -1,0 +1,333 @@
+<div class="">
+  <nav class="navbar  topnav">
+    <div class="clearfix ">
+      <a class="navbar-brand" [routerLink]="['/dashboard']"><img src="assets/img/aaislogo.png" class="top-nav-logo" /></a>
+      <nav class="sidebar" [class.sidebarPushRight]="isSidebarOpen">
+        <div class="app-title">
+          <img src="assets/img/aaislogo.png" class="sidebar-logo" />
+          <h2>Oddesigners</h2>
+          <p class="subtitle">UX and Design</p>
+        </div>
+        <ul class="list-group">
+          <ngb-accordion [closeOthers]="true">
+            <ngb-panel id="1">
+              <template ngbPanelTitle>
+                  <a class="list-group-item">Dashboard
+                    <i class="arrow-right fa fa-chevron-right"></i></a>
+              </template>
+              <template ngbPanelContent>
+                <ul class="animated fadeInLeft ">
+                  <li class=""><a routerLink="/dashboard/dashboard1" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                          Version1
+                      </a></li>
+                      <li class=""><a routerLink="../topnavlayout/" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                              Layout
+                          </a></li>
+                </ul>
+              </template>
+            </ngb-panel>
+            <ngb-panel id="2">
+              <template ngbPanelTitle>
+                  <a routerLink="/dashboard/grid" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                          Grid
+                      </a>
+                </template>
+              <template ngbPanelContent>
+                </template>
+            </ngb-panel>
+            <ngb-panel id="3">
+              <template ngbPanelTitle>
+                  <a routerLink="/dashboard/graphs" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                          Graphs
+                      </a>
+                </template>
+              <template ngbPanelContent>
+                </template>
+            </ngb-panel>
+
+            <ngb-panel id="4">
+              <template ngbPanelTitle>
+                  <a class="list-group-item">UI Elements
+                  <i class="arrow-right fa fa-chevron-right"></i></a>
+              </template>
+              <template ngbPanelContent>
+                <ul class="animated fadeInLeft">
+
+
+                  <li class=""><a routerLink="/dashboard/uielements/buttons" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            Buttons & Typography
+                    </a></li>
+                  <li class=""><a routerLink="/dashboard/uielements/carousel" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                    Carousel
+                  </a></li>
+                  <li class=""><a routerLink="/dashboard/uielements/collapse" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                    Panels
+                    </a></li>
+                  <li class=""><a routerLink="/dashboard/uielements/progressbar" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                        Progress & Labels
+                        </a></li>
+                  <li class=""><a routerLink="/dashboard/uielements/alert" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                                    Notifications
+                                </a></li>
+                  <li class=""><a routerLink="/dashboard/uielements/accordion" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                                    Tabs &  Accordions
+                                    </a></li>
+                </ul>
+              </template>
+            </ngb-panel>
+            <ngb-panel id="5">
+              <template ngbPanelTitle>
+                  <a routerLink="/dashboard/layout" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                          Layouts
+                      </a>
+                </template>
+              <template ngbPanelContent>
+                </template>
+            </ngb-panel>
+            <ngb-panel id="6">
+              <template ngbPanelTitle>
+                  <a routerLink="/dashboard/tables/regtables" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                        Tables
+                      </a>
+                </template>
+              <template ngbPanelContent>
+                </template>
+            </ngb-panel>
+          </ngb-accordion>
+
+
+        </ul>
+      </nav>
+      <ul class="nav navbar-nav top-nav navbar-right pull-xs-right top-right-nav">
+
+      <!--  <li class="dropdown nav-item " [class.open]="isClassOpen">
+          <a class="nav-link dropdown-toggle" (click)="isClassOpen = !isClassOpen;" id="dropdownMenu4"><i class="fa fa-envelope"></i> <div class="circle-alert">3</div><span class="sr-only">(current)</span></a>
+          <ul class="dropdown-menu message-dropdown" aria-labelledby="dropdownMenu4">
+            <li class="message-preview">
+              <a href="javascript:;" class="dropdown-item">
+                <div class="media">
+                  <span class="media-left">
+                                        <img class="media-object" src="assets/img/bunny-man-profile.jpg" alt="">
+                                    </span>
+                  <div class="media-body">
+                    <h5 class="media-heading"><strong>Mr. Bunny</strong>
+                                        </h5>
+                    <p class="timestamp "><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                    <p class="last"> What up brah?</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="message-preview">
+              <a href="" class="dropdown-item">
+                <div class="media">
+                  <span class="media-left">
+                                        <img class="media-object" src="assets/img/lincoln-profile-pic.jpg" alt="">
+                                    </span>
+                  <div class="media-body">
+                    <h5 class="media-heading"><strong>Abraham Lincoln</strong>
+                                        </h5>
+                    <p class="timestamp "><i class="fa fa-clock-o"></i> Yesterday at 2:32 PM</p>
+                    <p class="last"> Brah, let's catch the surf later.</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="message-preview">
+              <a href="javascript:;" class="dropdown-item">
+                <div class="media">
+                  <span class="media-left">
+                                          <img class="media-object" src="assets/img/pineapple-skull-profile.jpg" alt="">
+                                    </span>
+                  <div class="media-body">
+                    <h5 class="media-heading"><strong>Pineapple Skull</strong>
+                                        </h5>
+                    <p class="timestamp "><i class="fa fa-clock-o"></i> Yesterday at 1:32 PM</p>
+                    <p class="last"> You gotta see my new shades!</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="dropdown-item message-footer">
+              <a href="" class="dropdown-item text-center">Read All New Messages</a>
+            </li>
+          </ul>
+
+        </li>
+        <li class="dropdown nav-item" [class.open]="isClassExpand" dropdown>
+
+          <a href="javascript:;" id="name2" class="nav-link dropdown-toggle" (click)="isClassExpand = !isClassExpand;" dropdownToggle>
+            <i class="fa fa-bell"></i>
+            <div class="circle-alert">3</div><span class="sr-only">(current)</span>
+          </a>
+          <ul class="dropdown-menu alert-dropdown" aria-labelledby="name2">
+            <li class="message-preview">
+              <a class="dropdown-item info">
+                <div class="media">
+
+                  <div class="media-body">
+                    <h5 class="media-heading"><i class="fa fa-info-circle"></i> <strong>Everything's Fine</strong>
+                                      </h5>
+                    <p class="timestamp "><i class="fa fa-clock-o"></i> Yesterday at 1:33 AM</p>
+                    <p class="last"> Updates, good to knows</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="message-preview">
+              <a class="dropdown-item warning">
+                <div class="media">
+
+                  <div class="media-body">
+                    <h5 class="media-heading "><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <strong>Look</strong>
+                                      </h5>
+                    <p class="timestamp "><i class="fa fa-clock-o"></i> Yesterday at 10:14 AM</p>
+                    <p class="last"> Only you can prevent forest fires</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="message-preview">
+              <a class="dropdown-item danger">
+                <div class="media">
+
+                  <div class="media-body">
+                    <h5 class="media-heading ">  <i class="fa fa-fire" aria-hidden="true"></i> <strong>Stop</strong>
+                                      </h5>
+                    <p class="timestamp "><i class="fa fa-clock-o"></i> Yesterday at 2:55 PM</p>
+                    <p class="last"> Everything is on fire, fix it!</p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="alert-footer">
+              <a href="javascript:;" class="dropdown-item">View All</a>
+            </li>
+          </ul>
+
+        </li> -->
+
+        <li class="dropdown nav-item" dropdown>
+          <a (click)="isClassVisible = !isClassVisible;" id="single-button" class="nav-link dropdown-toggle" dropdownToggle>
+            <img src="assets/img/profile-pic.jpg" class="user-avatar" /><b class="caret"></b>
+          </a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="account-sidebar" [class.appear]="isClassVisible">
+    <ul>
+      <li class="user-profile">
+        <img src="assets/img/profile-pic.jpg" alt="UserName" />
+        <h5 class="media-heading">Beardy McBeardFace</h5>
+        <p class="email">McBeardface@beard.org</p>
+        <p><a href="" class="btn">My Profile</a></p>
+
+
+      </li>
+      <li>
+        <a class="dropdown-item" href="javascript:;"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="javascript:;"><i class="fa fa-fw fa-gear"></i> Settings</a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="javascript:;" [routerLink]="['/']">
+          <i class="fa fa-fw fa-power-off"></i> Log Out
+        </a>
+      </li>
+    </ul>
+  </div>
+  <button class="btn sidebar-button" id="toggle-sidebar" type="button" (click)="isSidebarOpen = !isSidebarOpen;">
+    &#9776;
+</button>
+  <div class="max-width-center">
+    <section class="dashboard-header">
+      <div class="wrapper row">
+        <div class="col">
+          <h1>Monthly Sales</h1>
+          <p class="subheader">Figuring out efficiency</p>
+        </div>
+      </div>
+    </section>
+    <section class="row wrapper">
+      <div class="col-12">
+        <h2 class="dashboard-section-header">Month to date</h2>
+      </div>
+      <div class="col-md-4">
+        <h3 class="emphasis">5,456<span class="subheader">Leads</span></h3>
+        <p class="percent-change flex"><span class="success-text flex">+10<span class="symbol">%</span></span> <span class="inline-label">Month to date average</span>
+          <table class="table table-hover low-padding">
+
+            <tbody>
+              <tr class="number1">
+                <td>Mr. Bunny</td>
+                <td>214</td>
+                <td class="success-text flex">+9<span class="symbol">%</span></td>
+              </tr>
+              <tr>
+                <td>Abraham Lincoln</td>
+                <td>190</td>
+                <td class="flex">-1<span class="symbol">%</span></td>
+              </tr>
+              <tr>
+                <td>T. Rex</td>
+                <td>150</td>
+                <td class="success-text flex">+3<span class="symbol">%</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="view-all"><a>View all <i class="fa fa-chevron-right"></i></a></p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="emphasis">2,729<span class="subheader">Sales</span></h3>
+        <p class="percent-change flex"><span class="success-text flex">+32<span class="symbol">%</span></span> <span class="inline-label">Month to date average</span>
+          <table class="table table-hover low-padding">
+
+            <tbody>
+              <tr class="number1">
+                <td>T. Rex</td>
+                <td>124</td>
+                <td class="success-text flex">+39<span class="symbol">%</span></td>
+              </tr>
+              <tr>
+                <td>Abraham Lincoln</td>
+                <td>120</td>
+                <td class="flex">-10<span class="symbol">%</span></td>
+              </tr>
+              <tr>
+                <td>Mr. Bunny</td>
+                <td>108</td>
+                <td class="success-text flex">+3<span class="symbol">%</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="view-all"><a>View all <i class="fa fa-chevron-right"></i></a></p>
+      </div>
+      <div class="col-md-4">
+        <h3 class="graph-header">Conversion Ratio</h3>
+        <div class="donut-container">
+          <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [legend]="false" [options]="doughnutChartOptions" [colors]="doughnutChartColors" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+          <div class="middle-donut">
+            <h3 class="emphasis">55%<span class="subheader">of Customers</span></h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="row wrapper padding-top">
+      <div class="col-12">
+        <h2 class="dashboard-section-header">Leads Vs Sales</h2>
+        <div class="graph-container">
+          <canvas baseChart width="100%" height="50%" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType"></canvas>
+
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

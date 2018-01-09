@@ -1,0 +1,19 @@
+.fixed-nav{
+.navbar{
+  width:100%;
+  position:$top-nav-position;
+
+}
+.sidebar-button.btn{
+  padding: .5em;
+  position: $top-nav-position;
+}
+.main-container{
+  padding-top:0;
+}
+@media screen and (min-width: $sidebar-breakpoint) {
+  .navbar{
+    margin-left:0;
+  }
+}
+}

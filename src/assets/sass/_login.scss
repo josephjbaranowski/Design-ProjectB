@@ -1,0 +1,35 @@
+.login-page{
+  height:100vh;
+  .flex-row{
+    height:100%;
+  }
+  .row{
+    margin-right:0;
+    margin-left:0;
+  }
+  .center-box{
+    padding:2rem;
+  }
+.logo{
+  max-height:10em;
+  max-width:15em;
+  margin:2em 0;
+}
+a.btn{
+  margin-left:0;
+}
+}
+.image-rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  margin:-60px 0 0 -60px;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

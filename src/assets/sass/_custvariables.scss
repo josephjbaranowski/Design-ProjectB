@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro:400,700');
+@import url("https://use.typekit.net/dus8soe.css");
+
+// Body
+$body-bg: #f6f6f6;
+$content-max-width:80em;
+$alt-background:#fff;
+
+// Usr Brand
+$brand-primary: #21428E;
+$brand-info: #15A9E3;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+$brand-cta: #000088;
+
+// Typography
+$main-font: 'Effra', sans-serif;
+$header-font: 'Proxima Nova' , sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$text-color: #666;
+$brand-primary-background-text: #fff;
+// Nav
+$top-nav-height:2.5rem;
+$nav-background:lighten($brand-primary, 30%);
+$nav-sidebar-width:15em;
+$sidebar-breakpoint:100rem;
+$sidebar-text-color:#000;
+$top-nav-position:fixed;
+$logo-height: 2em;
+
+// Forms
+$form-max-width:40rem;
+
+// Buttons
+$button-padding:1rem 2rem;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// padding
+$padding:.2em;
+
+//Box Shadow
+$b-shadow-1: 0 .2em .25em 0 rgba(0,0,0,0.14),0 .1em .6em 0 rgba(0,0,0,0.12),0 .15em .25em -.1em rgba(0,0,0,0.3);
+$b-shadow-2:0 .3em .6em 0 rgba(0,0,0,0.14),0 .1em 1.1em 0 rgba(0,0,0,0.12),0 .2em .3em -.1em rgba(0,0,0,0.3);
+$b-shadow-3:0 .5em .6em .1em rgba(0,0,0,0.14),0 .15em .9em .1em rgba(0,0,0,0.12),0 .3em .3em -.15em rgba(0,0,0,0.3);
+$b-shadow-4:0 1em 1.5em .1em rgba(0,0,0,0.14),0 .33em 1.75em .3em rgba(0,0,0,0.12),0 .5em .6em -.3em rgba(0,0,0,0.3);

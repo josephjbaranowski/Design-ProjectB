@@ -1,0 +1,94 @@
+.britecore{
+
+  a.list-group-item{
+    width:100%;
+    border:0 solid transparent;
+    padding:0;
+    display:table;
+    background:transparent;
+  }
+  h2 {
+    font-size: 1.2em;
+    letter-spacing: .05em;
+    margin-bottom:.5rem;
+}
+ul{
+  list-style-type: none;
+  padding-left:1rem;
+}
+.edit{
+  font-size:.8rem;
+}
+i.fa.lighten {
+    float: left;
+    margin-right: 1rem;
+    color: #ccc;
+}
+i.fa.fa-times.danger {
+    margin-left: -1rem;
+}
+.danger{
+  color:$brand-danger;
+
+}
+.grey-background{
+  background: #F1F1F0;
+  margin-bottom:1.5em;
+  padding-bottom:1em;
+  h1{
+    margin-bottom:-.25em;
+    margin-top:.55em;
+  }
+  .right-align{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+}
+.agency-details{
+  font-size:.9rem;
+}
+}
+a.return{
+  margin-bottom:1.5rem;
+  color:#ddd;
+}
+.breadcrumbs{
+  font-size:.7rem;
+}
+label{
+  margin-top:1rem;
+  color:lighten($text-color, 10%);
+}
+.right-align{
+  text-align:right;
+}
+.row .card{
+  border-top:1px solid rgba(0,0,0,.125);
+  h2{
+    margin-bottom:.25rem;
+  }
+  h3{
+    font-size:1.25rem;
+  }
+  .card-block{
+    background:transparent;
+  }
+
+}
+body{
+  color:$text-color;
+}
+div.alert.alert-warning.alert-dismissible {
+    background: transparent;
+    border: 0 solid transparent;
+    margin-bottom:-4rem;
+    margin-top:-2.5rem;
+}
+.current-license{
+  display:flex;
+  flex-direction:column-reverse;
+  font-size:.9rem;
+  h4{
+    margin-bottom:0;
+  }
+}
