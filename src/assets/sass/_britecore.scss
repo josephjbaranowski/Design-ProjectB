@@ -133,7 +133,8 @@ a{
 }
 .br-card.info{
   header{
-    background:#C9D1DF;
+    background:$brand-info;
+    color:#fff;
   }
 }
 .br-card.warning{
@@ -228,4 +229,18 @@ ul.tabs-nav {
     margin: .25rem 0;
 padding: .5rem 0;
     color: #fff;
+}
+.row.info {
+    background: $brand-info;
+    margin: .25rem 0;
+padding: .5rem 0;
+    color: #fff;
+}
+.drilldown{
+  h2{
+    margin-bottom:0;
+  }
+  h3.subheader{
+    font-size:.75rem;
+  }
 }

@@ -4,8 +4,8 @@
 <div class="col flex-row">
   <img src="assets/img/abclogo.png" alt="abc logo auto insurance" />
   <ul class="tabs-nav">
-    <li><a routerLink="/agdashboard/initial" [routerLinkActive]="['router-link-active']"  >Licenses <div class="circle-alert">1</div></a></li>
-    <li><a routerLink="/agdashboard/agentag" [routerLinkActive]="['router-link-active']" class="current">Agents</a><div class="circle-alert">2</div></li>
+    <li><a routerLink="/agdashboard/initial" [routerLinkActive]="['router-link-active']"  class="current">Licenses <div class="circle-alert">1</div></a></li>
+    <li><a routerLink="/agdashboard/agentag" [routerLinkActive]="['router-link-active']" >Agents</a><div class="circle-alert">2</div></li>
     <li><a routerLink="/agdashboard/agencyedit" [routerLinkActive]="['router-link-active']" >Profile</a></li>
       <li><a routerLink="/agdashboard/policyag" [routerLinkActive]="['router-link-active']">Policies</a></li>
 
@@ -15,22 +15,7 @@
 </section>
 <section class="row wrapper">
 
-  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
-    <a >
-    <div class="br-card add">
-      <header>
-        <div class="row">
 
-          <div class="col">
-            <h2>+Add State</h2>
-
-          </div>
-        </div>
-        </header>
-
-    </div>
-  </a>
-  </div>
   <div class="col-6 col-md-4 col-lg-4 col-xl-3">
     <a>
     <div class="br-card warning">
@@ -184,6 +169,22 @@
             <h4><span class="subheader">Available</span>Policies</h4>
           </div>
         </div>
+    </div>
+  </a>
+  </div>
+  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+    <a >
+    <div class="br-card add">
+      <header>
+        <div class="row">
+
+          <div class="col">
+            <h2>+Add State</h2>
+
+          </div>
+        </div>
+        </header>
+
     </div>
   </a>
   </div>

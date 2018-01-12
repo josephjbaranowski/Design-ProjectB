@@ -12,6 +12,7 @@ import { SidenavigationComponent } from './sidenavigation/sidenavigation.compone
 import { AgentagComponent } from './agentag/agentag.component';
 import { PolicyagComponent } from './policyag/policyag.component';
 import { InitialComponent } from './initial/initial.component';
+import { Agentag1Component } from './agentag1/agentag1.component';
 
 
 @NgModule({
@@ -21,6 +22,6 @@ import { InitialComponent } from './initial/initial.component';
     ModalModule,
     PopoverModule,
   ],
-  declarations: [AGdashboardComponent, NavigationComponent, SidenavigationComponent, AgfooterComponent, AgencyeditComponent, AgentagComponent, InitialComponent, PolicyagComponent]
+  declarations: [AGdashboardComponent, NavigationComponent, SidenavigationComponent, AgfooterComponent, AgencyeditComponent, AgentagComponent, InitialComponent, PolicyagComponent, Agentag1Component]
 })
 export class DashboardModule { }

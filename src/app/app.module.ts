@@ -54,6 +54,7 @@ import { AgfooterComponent } from './agdashboard/agfooter/agfooter.component';
 import { InitialComponent } from './agdashboard/initial/initial.component';
 import { AgencyeditComponent } from './agdashboard/agencyedit/agencyedit.component';
 import { AgentagComponent } from './agdashboard/agentag/agentag.component';
+import { Agentag1Component } from './agdashboard/agentag1/agentag1.component';
 import { PolicyagComponent } from './agdashboard/policyag/policyag.component';
 
 
@@ -107,6 +108,7 @@ import { PolicyagComponent } from './agdashboard/policyag/policyag.component';
     AgencyeditComponent,
     AgentagComponent,
     PolicyagComponent,
+    Agentag1Component,
   ],
   imports: [
     BrowserModule,
