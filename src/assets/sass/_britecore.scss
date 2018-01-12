@@ -113,6 +113,19 @@ a{
     color:#666;
   }
 }
+.br-card.info{
+  header{
+    background:#C9D1DF;
+  }
+}
+.br-card.warning{
+  background: #FBBFBF;
+
+header{
+  color:#fff;
+  background:#F92F2F;
+}
+}
 .br-card{
   background:#fff;
   border:.1rem solid #E4E4E4;
@@ -161,4 +174,31 @@ a{
   flex-direction: column-reverse;
   justify-content: bottom;
   justify-self:bottom;
+}
+ul.tabs-nav {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+    margin-top:auto;
+    margin-bottom:0;
+    li:first-child{
+      margin-left:3rem;
+    }
+    li{
+      margin:0 1.5rem;
+      position:relative;
+      a{
+        color:#999;
+        text-transform:uppercase;
+        font-weight:normal;
+      }
+      div.circle-alert{
+          left:auto;
+        right:-.95rem;
+
+      }
+      a.current{
+        color:$brand-primary;
+      }
+    }
 }
