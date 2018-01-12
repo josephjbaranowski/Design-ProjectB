@@ -2,8 +2,8 @@
 <nav class="navbar  topnav" >
     <div class="clearfix ">
 
-        <a class="navbar-brand" routerLink="/dashboard/dashboard1" [routerLinkActive]="['router-link-active']"><img src="assets/img/aaislogo.png" class="top-nav-logo"/></a>
-        <sidenavigation></sidenavigation>
+        <a class="navbar-brand" routerLink="/agdashboard/initial/" [routerLinkActive]="['router-link-active']"><img src="assets/img/aaislogo.png" class="top-nav-logo"/></a>
+        <!--<sidenavigation></sidenavigation>-->
         <ul class="nav navbar-nav top-nav navbar-right pull-xs-right top-right-nav">
 
             <!--<li class="dropdown nav-item " [class.open]="isClassOpen">
@@ -119,7 +119,7 @@
 
             <li class="dropdown nav-item" dropdown>
                 <a (click)="isClassVisible = !isClassVisible;" id="single-button" class="nav-link dropdown-toggle" dropdownToggle >
-                    <img src="assets/img/profile-pic.jpg" class="user-avatar"/><b class="caret"></b>
+                    <img src="assets/img/han-solo.png" class="user-avatar"/><b class="caret"></b>
                 </a>
 
             </li>
@@ -129,9 +129,9 @@
 <div class="account-sidebar"[class.appear]="isClassVisible">
   <ul >
       <li class="user-profile">
-          <img src="assets/img/profile-pic.jpg" alt="UserName" />
-          <h5 class="media-heading">Beardy McBeardFace</h5>
-          <p class="email">McBeardface@abcautoinsurance.com</p>
+          <img src="assets/img/han-solo.png" alt="UserName" />
+          <h5 class="media-heading">Han Solo</h5>
+          <p class="email">hansolo@abcautoinsurance.com</p>
           <p><a href="" class="btn">My Profile</a></p>
 
 

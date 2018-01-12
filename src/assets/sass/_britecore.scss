@@ -30,7 +30,6 @@ i.fa.fa-times.danger {
 
 }
 .grey-background{
-  background: #Fff;
   margin-bottom:1.5em;
   padding-bottom:1em;
   h1{
@@ -220,4 +219,13 @@ ul.tabs-nav {
         color:$brand-primary;
       }
     }
+}
+.tabs-nav .circle-alert{
+  background:$brand-danger;
+}
+.row.danger {
+    background: #bf5329;
+    margin: .25rem 0;
+padding: .5rem 0;
+    color: #fff;
 }

@@ -1,45 +1,190 @@
 <section class="dashboard-header  ">
-  <div class="wrapper row">
-  <div class="col breadcrumbs">
 
+<div class="wrapper row">
+<div class="col flex-row">
+  <img src="assets/img/abclogo.png" alt="abc logo auto insurance" />
+  <ul class="tabs-nav">
+    <li><a routerLink="/agdashboard/initial" [routerLinkActive]="['router-link-active']"  >Licenses <div class="circle-alert">1</div></a></li>
+    <li><a routerLink="/agdashboard/agentag" [routerLinkActive]="['router-link-active']" class="current">Agents</a><div class="circle-alert">2</div></li>
+    <li><a routerLink="/agdashboard/agencyedit" [routerLinkActive]="['router-link-active']" >Profile</a></li>
+      <li><a routerLink="/agdashboard/policyag" [routerLinkActive]="['router-link-active']">Policies</a></li>
 
-  </div>
+  </ul>
+</div>
 </div>
 </section>
-<section class="row wrapper britecore">
+<section class="row wrapper">
 
-  <div class="col-12 grey-background" >
+  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+    <a >
+    <div class="br-card add">
+      <header>
+        <div class="row">
 
-    <h1>AGENCY ABC</h1><p><a routerLink="/agdashboard/agencyedit" [routerLinkActive]="['router-link-active']" class="edit">Edit Agency</a></p>
+          <div class="col">
+            <h2>+Add State</h2>
 
-  <div class="row agency-details">
-    <div class="col-4">
-    <p>Han Solo</p>
-    <p>(800) 708-0123</p>
-    <p>4670 I-49 North Service Road Opelousas<br />LA 70570</p>
-    </div>
-    <div class="col-4">
-    <p><a href="mailto:info@abcautoinsurance.com">info@infoabcautoinsurance.com</a><br />
-      <a href="https://abcautoinsurance.com/">abcautoinsurance.com</a>
-    </p>
-
+          </div>
+        </div>
+        </header>
 
     </div>
-</div>
+  </a>
   </div>
-  <div class="col-6 outline">
-    <h2><span class="subheader">STATE</span>Licenses</h2>
-    <p>IL, MN, MI, OH, WI</p>
+  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+    <a>
+    <div class="br-card warning">
+      <header>
+        <div class="row">
 
-    <p><a routerLink="/dashboard/license" [routerLinkActive]="['router-link-active']" class="edit">+ Licenses</a></p>
+          <div class="col">
+            <h2>Alabama</h2>
+            <h3 class="subheader ">Licensed expired 1/1/2018</h3>
+          </div>
+        </div>
+        </header>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>1</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Unassigned</span>Agents</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>8</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Available</span>Policies</h4>
+          </div>
+        </div>
+    </div>
+  </a>
   </div>
-  <div class="col-6 outline">
-    <h2><span class="subheader">CURRENT</span>Agents</h2>
-    <p>Chewbacca, Lando Carlrissian, Nien Numb</p>
-    <p><a routerLink="/dashboard/agent" [routerLinkActive]="['router-link-active']" class="edit">+ Agent</a></p>
+
+  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+    <a >
+    <div class="br-card">
+      <header>
+        <div class="row">
+
+          <div class="col">
+            <h2>Illinois</h2>
+            <h3 class="subheader">Licensed until 10/1/2018</h3>
+          </div>
+        </div>
+        </header>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>5</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Unassigned</span>Agents</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>3</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Available</span>Policies</h4>
+          </div>
+        </div>
+    </div>
+  </a>
   </div>
-</section>
+  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+    <a >
+    <div class="br-card">
+      <header>
+        <div class="row">
 
-  <section class="row wrapper padding-top">
+          <div class="col">
+            <h2>Michigan</h2>
+            <h3 class="subheader">Licensed until 10/1/2018</h3>
+          </div>
+        </div>
+        </header>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>5</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Unassigned</span>Agents</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>3</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Available</span>Policies</h4>
+          </div>
+        </div>
+    </div>
+  </a>
+  </div>
+  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+    <a >
+    <div class="br-card">
+      <header>
+        <div class="row">
 
+          <div class="col">
+            <h2>Minnesota</h2>
+            <h3 class="subheader">Licensed until 10/1/2018</h3>
+          </div>
+        </div>
+        </header>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>5</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Unassigned</span>Agents</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>3</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Available</span>Policies</h4>
+          </div>
+        </div>
+    </div>
+  </a>
+  </div>
+  <div class="col-6 col-md-4 col-lg-4 col-xl-3">
+    <a >
+    <div class="br-card info">
+      <header>
+        <div class="row">
+
+          <div class="col">
+            <h2>Wisconsin</h2>
+            <h3 class="subheader">Licensed until 1/31/2018</h3>
+          </div>
+        </div>
+        </header>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>2</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Unassigned</span>Agents</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 right-align">
+            <p>5</p>
+          </div>
+          <div class="col-9">
+            <h4><span class="subheader">Available</span>Policies</h4>
+          </div>
+        </div>
+    </div>
+  </a>
+  </div>
   </section>

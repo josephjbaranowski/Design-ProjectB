@@ -42,6 +42,8 @@ import { SidenavigationComponent } from './agdashboard/sidenavigation/sidenaviga
 import { AgfooterComponent } from './agdashboard/agfooter/agfooter.component';
 import { InitialComponent } from './agdashboard/initial/initial.component';
 import { AgencyeditComponent } from './agdashboard/agencyedit/agencyedit.component';
+import { AgentagComponent } from './agdashboard/agentag/agentag.component';
+import { PolicyagComponent } from './agdashboard/policyag/policyag.component';
 
 
 export const routes: Routes = [
@@ -51,8 +53,10 @@ export const routes: Routes = [
  },
  { path: 'agdashboard', component: AGdashboardComponent,
  children:[
-	 { path: 'inital', component: InitialComponent},
+	 { path: 'initial', component: InitialComponent},
 		{ path: 'agencyedit', component: AgencyeditComponent },
+		{ path: 'policyag', component: PolicyagComponent },
+		{ path: 'agentag', component: AgentagComponent },
   ]
 },
 	 { path: 'dashboard', component: DashboardComponent,
