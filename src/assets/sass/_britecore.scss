@@ -30,7 +30,7 @@ i.fa.fa-times.danger {
 
 }
 .grey-background{
-  background: #F1F1F0;
+  background: #Fff;
   margin-bottom:1.5em;
   padding-bottom:1em;
   h1{
@@ -97,4 +97,54 @@ div.alert.alert-warning.alert-dismissible {
 }
 a.edit{
   font-size:.8rem;
+}
+.topnavlayout .max-width-center {
+    background: #f6f6f6;
+}
+
+.br-card{
+  background:#fff;
+  border:.1rem solid #E4E4E4;
+  padding-bottom:1rem;
+  header{
+    .row{
+      margin-bottom:0;
+    }
+    background:#f6f6f6;
+      border-bottom:.1rem solid #E4E4E4;
+      margin-bottom:1rem;
+      h2{
+        font-family:'Proxima Nova';
+        margin-top:0;
+      }
+      h2:first-child{
+        margin-top:0;
+      }
+      h3{
+        font-size:.8rem;
+        font-weight:normal;
+        margin-bottom:0;
+      }
+  }
+  .row{
+    margin-bottom:1rem;
+  }
+  p{
+    margin-bottom:0;
+    line-height:1em;
+  }
+  h4{
+    font-size:.95rem;
+    margin-bottom:0;
+  }
+  .col-3.right-align{
+    font-size:1.5rem;
+    font-weight:bold;
+  }
+}
+.bottom-align{
+  display:flex;
+  flex-direction: column-reverse;
+  justify-content: bottom;
+  justify-self:bottom;
 }
